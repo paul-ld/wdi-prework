@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>WDI Prework</title>
   </head>
+
   <body>
     <header role="banner">
       <h1 id="logo">WDI Prework</h1> <!-- Logo here -->
@@ -16,7 +17,10 @@
         </ul>
       </nav>
     </header>
+
+
     <main role="main">
+
       <aside id="sidebar">
         <h2>Sidebar</h2>
         <!-- Sidebar goes here -->
@@ -25,25 +29,30 @@
           <!-- Page Navigation goes here -->
         </nav>
       </aside>
+
       <article id="lesson">
+
         <header>
           <h2>Lesson : Wireframing and review</h2>
         </header>
+
         <section id="lesson-objectives">
           <h3>Lesson Objectives</h3>
           <ul class="objectives">
-            <li>Learn the basics of website wireframing and why we do it</li>
-            <li>Wireframe a few pages</li>
-            <li>Learn a bit more about <em>sectioning</em> content and the &lt;nav&gt;, &lt;article&gt;, and &lt;aside&gt; tags</li>
-            <li>Get a little bit deeper into ARIA roles</li>
-            <li>Take a bit of a break</li>
+            <li>Learn what a <mark class="keyword">user persona</mark> is and why we might want them</li>
+            <li>OK, learn why maybe we <i>don't want</i> to use <mark class="keyword">personas</mark></li>
+            <li>Learn what a <mark class="keyword">user story</mark> is and why we might write them</li>
+            <li>OK, learn why maybe we should write <mark class="keyword">job stories</mark> instead</li>
+            <li>Create our first, very basic <mark class="keyword">wireframe</mark></li>
           </ul>
         </section>
+
         <section id="lesson-introduction">
           <h3>Introduction</h3>
             <p>OK, I don't know about you, but I'm tired of that boring Mojo site. I want to build something that's useful to me (or us). So, I'm thinking, <em>let's build a website for the pre-work</em>. We can go through the process step by step.</p>
             <p>At first, at least, it will just be an old-fashioned static website. But maybe later we'll add some CoffeeScript and jQuery and have some fun.</p>
         </section>
+
         <section id="getting-started">
           <h3>Hooray! So how do we get started?</h3>
             <p>Well, the first thing we need to do is to figure out what our site will do, and who it will do it for.</p>
@@ -53,13 +62,16 @@
             <p>Finally, we might want to show the site off to others: friends, family, the course manager, curriculum folks, etc. Let's call them <strong>guests</strong>. So we should at least consider their needs.</p>
             <p>So we'll create three <mark>personas</mark> — student, instructor, and guest — one for each type of user.</p>
         </section>
+
         <section id="build-personas">
           <h3>Great! How do we build a persona, then?</h3>
             <p>Well, there's an excellent explanation on the <mark><a href="http://www.usability.gov/how-to-and-tools/methods/personas.html">usability.gov</a></mark> website, so rather than reinvent the wheel here, we'll just link to that. Go check it out, then come back and we'll build our personas.</p>
             <p>So let's take a look at our three example personas...</p>
         </section>
+
         <section id="three-personas">
           <h3>Our Thre personas</h3>
+
           <figure id="student-persona">
             <figcaption>Student Persona</figcaption>
             <dl class="persona">
@@ -96,6 +108,7 @@
                 <dd>I hope I can keep up with the work!</dd>
             </dl>
           </figure>
+
           <figure id="instructor-persona">
             <figcaption>Instructor Persona</figcaption>
             <dl class="persona">
@@ -132,6 +145,7 @@
                 <dd>Let's just roll our own and build it from scratch!</dd>
             </dl>
           </figure>
+
           <figure id="guest-persona">
             <dl class="persona">
               <dt>Persona</dt>
@@ -168,6 +182,7 @@
             </dl>
           </figure>
         </section>
+
         <section id="should-we-use-personas">
           <h3>Should we really use personas?</h3>
           <p>Well, that seems a funny question to ask at this juncture. I mean, we just spent a bunch of time making them up (well, I did, anyway). Now we're not going to use them?</p>
@@ -176,6 +191,7 @@
           <p>Gosh, who would do a thing like that? Oh. Yeah. Everyone.</p>
           <p>Once the personas have been created, most developers will create <em>user stories</em> next. But these, too, have their detractors. Let's look at a couple of different ways to create user stories, and then see how else we might solve the same problem.</p>
         </section>
+
         <section id="what-story">
           <h3>So, what's the <i>story</i>?</h3>
           <p>We need some way to come up with a <em>specification</em> for our website. One of the biggest mistakes that most newbie developers (and many who really oughta know better) make is to <em>jump straight into coding</em>.</p>
@@ -193,37 +209,59 @@
           <p>This iterative process (called the <mark>Agile Method</mark>) allows us to make sure that all the stakeholders are involved at every step of the process, and that mistakes are discovered and corrected quickly. We'll be talking a lot about Agile during WDI. Wait! Talking? <em>We'll be doing</em></p>
           <p>Agile. Daily.</p>
         </section>
+
         <section id="user-stories">
           <h3>Well, what do these stories look like?</h3>
-          <p>The original format from 2001 looked like this:</p>
-          <ul>
-            <li>As a <mark>[role]</mark>, I want <mark>[goal/desire]</mark> so that <mark>[benefit]</mark></li>
-          </ul>
-          <p>Here's an example (from Wikipedia):</p>
-            <blockquote>As a <em>student</em>, I want to see <em>estimated times for completion</em>, so that I may <em>schedule my lesson better</em>.</blockquote>
-          <p>Some developers have a problem with this format, however. They think that the <em>benefit</em> should come first (calling it <q>"hunting the value"</q>), so they swap it around:</p>
-            <blockquote>In order to <mark>[receive benefit]</mark> as a <mark>[role]</mark>, I want <mark>[goal/desire]</mark></blockquote>
-          <p>Now we have:</p>
-            <blockquote>So that I may <em>schedule my lessons</em> better, as a <em>student</em>, I want to see <em>estimated times for completion</em>.</blockquote>
-          <p>That worked for a number of years. Then some smart guy pointed out that if you drop the role part, you don't really lose anything. And then that lead to yet another idea, that of the job story.</p>
-          <p>The job story follows this format:</p>
-            <blockquote>When <mark>[situation]</mark>, I want to <mark>[motivation]</mark>, so I can <mark>[expected outcome]</mark></blockquote>
-          <p>Here's our user story rewritten as a job story:</p>
-            <blockquote>When I start a lesson, I want to know <em>how long it will take to complete it</em>, so that I can <em>schedule my time</em> appropriately.</blockquote>
+          <dl>
+            <dt>The original format from 2001 looked like this:</dt>
+            <dd>As a <b class="generic-element">[role]</b>,
+            I want <b class="generic-element">[goal/desire]</b>
+            so that <b class="generic-element">[benefit]</b></dd>
+
+            <dt>Here's an example (from Wikipedia):</dt>
+            <dd>As a <b class="specific-element">student</b>,
+            I want to see <b class="specific-element">estimated times for completion</b>,
+            so that I may <b class="specific-element">schedule my lesson better</b>.</dd>
+
+            <dt>Some developers have a problem with this format, however. They think that the <em>benefit</em> should come first (calling it <q>"hunting the value"</q>), so they swap it around:</dt>
+            <dd>In order to <b class="generic-element">[receive benefit]</b>
+            as a <b class="generic-element">[role]</b>,
+            I want <b class="generic-element">[goal/desire]</b></dd>
+
+            <dt>Now we have:</dt>
+            <dd>So that I may <b class="specific-element">schedule my lessons</b> better,
+            as a <b class="specific-element">student</b>,
+            I want to see <b class="specific-element">estimated times for completion</b>.</dd>
+
+            <dt>That worked for a number of years. Then some smart guy pointed out that if you drop the role part, you don't really lose anything. And then that lead to yet another idea, that of the job story.The job story follows this format:</dt>
+            <dd>When <b class="generic-element">[situation]</b>,
+            I want to <b class="generic-element">[motivation]</b>,
+            so I can <b class="generic-element">[expected outcome]</b></dd>
+
+            <dt>Here's our user story rewritten as a job story:</dt>
+            <dd>When I start a lesson, I want to know <b class="specific-element">how long it will take to complete it</b>,
+            so that I can <b class="specific-element">schedule my time</b> appropriately.</dd>
+          </dl>
         </section>
+
         <section id="what-format-use">
           <h3>OK, I give up. Which format should I use?</h3>
           <p>The truth is this: it probably doesn't matter. What is most important here is to <mark>stimulate discussion</mark> involving <mark>all the stakeholders</mark>—including, if possible, the users themselves—so that the specification—the <mark>feature set</mark>—is as complete and correct as possible.</p>
           <p>Building the pre-work website is an <mark>Agile</mark> process—an <mark>iterative</mark> process—so why not write a few of your own user or job stories? After all, <em>you are the intended users</em>. Send yours to <a href="mailto:charles.munat@generalassemb.ly" class="email">charles.munat@generalassemb.ly</a> and maybe they'll be incorporated into the site's UX.</p>
           <p>Stranger things have happened...</p>
         </section>
+
         <section id="wireframe">
           <h3>On the wireframe...</h3>
           <p>OK, assuming we have an idea of who our audience(s) is, and we have a few stories to let us know what features we want, the next step is to create a basic <mark>wireframe</mark> of the site. In this lesson we're just going to build a structure, then we'll fill it in with an example lesson in our next pre-work installment.</p>
           <p>According to Wikipedia (a very useful resource and one I recommend highly): <q>"A <em>website wireframe</em>, also known as a page schematic or screen blueprint, is a visual guide that represents the skeletal framework of a website."</q></p>
           <p>I used an online tool called <a href="http://balsamiq.com/">Balsamiq</a> to create a very simple structural wireframe for a typical lesson page. Here it is:</p>
-          <figure id="wireframe-image"><!-- Wireframe image goes here --></figure>
+          <figure id="wireframe-image">
+            <figcaption>Wireframe example</figcaption>
+            <!-- Wireframe image goes here -->
+          </figure>
         </section>
+
         <section id="wireframe-sketchy">
           <h3>Wait... why does it look so, uh, sketchy?</h3>
           <p>That's not an accident! Avoid the temptation to use "pixel perfect" graphics for your wireframes!</p>
@@ -231,12 +269,15 @@
           <p>If you use something like PhotoShop and you try to make it look like it will look with all the design elements in place, then you are getting way ahead of yourself and wasting a lot of time.</p>
           <p>Odds are that this design is going to change many times before it is finalized. You really want to waste all that time? Keep it to simple sketches until we know what we're going to do.</p>
           <p>Create an index.html page and code the above structure up (without looking), then check your code against mine (see last page). No cheating!</p>
+
         </section>
           <aside role="note">
             <h4>Note</h4>
             <!-- A comment can go here -->
           </aside>
-        <footer>
+
+
+        <footer role="presentation">
           <section id="success-measures">
             <h4>Measuring completion of this lesson</h4>
             <p>Hopefully, you've come away from this lesson understanding:</p>
@@ -249,6 +290,7 @@
               <li>What a wireframe is, why it looks the way it does, and what it is used for</li>
             </ul>
           </section>
+
           <section id="lesson-faq">
             <h4>Frequently Asked Questions</h4>
             <dl class="faq">
@@ -259,6 +301,7 @@
                 <dd>Sorry to be the one to have to break it to you.</dd>
             </dl>
           </section>
+
           <section id="additional-resources">
             <h4>Additional Resources</h4>
             <ul class="resources">
@@ -273,6 +316,7 @@
               <li><a href="http://balsamiq.com/">Balsamiq</a></li>
             </ul>
           </section>
+
           <section id="review-code">
             <h4>Review code</h4>
             <code>
@@ -282,6 +326,8 @@
         </footer>
       </article>
     </main>
+
+
     <footer>
       <section id="copyright">
         <h2>Copyright</h2>
