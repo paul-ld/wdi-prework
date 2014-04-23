@@ -28,7 +28,6 @@
       <article id="lesson">
         <header>
           <h2>Lesson : Wireframing and review</h2>
-          <!-- lesson objectives here -->
         </header>
         <section id="lesson-objectives">
           <h3>Lesson Objectives</h3>
@@ -40,13 +39,203 @@
             <li>Take a bit of a break</li>
           </ul>
         </section>
-        <section>
-          <h3>Section title</h3>
+        <section id="lesson-introduction">
+          <h3>Introduction</h3>
+            <p>OK, I don't know about you, but I'm tired of that boring Mojo site. I want to build something that's useful to me (or us). So, I'm thinking, <em>let's build a website for the pre-work</em>. We can go through the process step by step.</p>
+            <p>At first, at least, it will just be an old-fashioned static website. But maybe later we'll add some CoffeeScript and jQuery and have some fun.</p>
+        </section>
+        <section id="getting-started">
+          <h3>Hooray! So how do we get started?</h3>
+            <p>Well, the first thing we need to do is to figure out what our site will do, and who it will do it for.</p>
+            <p>To this end, we'll begin by creating <mark>personas</mark> for our audience. I can think of three different types of user who we might want to serve.</p>
+            <p>Obviously, there are the <strong>students</strong>: you. You are the primary audience as you'll be doing the lessons, so the site should put your needs foremost.</p>
+            <p>Then there are the <strong>instructors</strong>, who are also the authors and editors of the content. We'll need to think about them a bit, too.</p>
+            <p>Finally, we might want to show the site off to others: friends, family, the course manager, curriculum folks, etc. Let's call them <strong>guests</strong>. So we should at least consider their needs.</p>
+            <p>So we'll create three <mark>personas</mark> — student, instructor, and guest — one for each type of user.</p>
+        </section>
+        <section id="build-personas">
+          <h3>Great! How do we build a persona, then?</h3>
+            <p>Well, there's an excellent explanation on the <mark><a href="http://www.usability.gov/how-to-and-tools/methods/personas.html">usability.gov</a></mark> website, so rather than reinvent the wheel here, we'll just link to that. Go check it out, then come back and we'll build our personas.</p>
+            <p>So let's take a look at our three example personas...</p>
+        </section>
+        <section id="three-personas">
+          <h3>Our Thre personas</h3>
+          <figure id="student-persona">
+            <figcaption>Student Persona</figcaption>
+            <dl class="persona">
+              <dt>Persona</dt>
+                <dd>WDI Student</dd>
+              <dt>Photo</dt>
+                <dd><!-- Insert photo here with img src --></dd>
+              <dt>Fictional Name</dt>
+                <dd>Sally Student</dd>
+              <dt>Major responsibilities</dt>
+                <dd>Learn web development skills as quickly as possible</dd>
+              <dt>Demographics</dt>
+                <dd>
+                  <ul>
+                    <li>31 years old</li>
+                    <li>Single</li>
+                    <li>No children</li>
+                    <li>B.S. Economics</li>
+                    <li>Well travelled</li>
+                    <li>A bit of an autodidact</li>
+                    <li>Changing careers</li>
+                  </ul>
+                </dd>
+              <dt>Goals and tasks</dt>
+                <dd>Excited about changing careers, but worried about whether she can succeed in a new field.</dd>
+               <dd>Wants to learn as much as possible, but not sure where to start.</dd>
+                <dd>Has tried learning online. Now trying a more structured method.</dd>
+                <dd>Wants a job with a new startup upon graduation.</dd>
+              <dt>Environment</dt>
+                <dd>Has grown up using computers and the Internet. Is comfortable with technology.</dd>
+                <dd>Uses Facebook, Twitter, LinkedIn, Pinterest, and a dozen other Web services. Spends at least an hour a day online.</dd>
+                <dd>Can type 40+ wpm. Has a decent laptop and an iPhone. Stays up to date on software.</dd>
+              <dt>Quote</dt>
+                <dd>I hope I can keep up with the work!</dd>
+            </dl>
+          </figure>
+          <figure id="instructor-persona">
+            <figcaption>Instructor Persona</figcaption>
+            <dl class="persona">
+              <dt>Persona</dt>
+                <dd>WDI Instructor</dd>
+              <dt>Photo</dt>
+                <dd><!-- Photo here --></dd>
+             <dt>Fictional name</dt>
+                <dd>Irving Instructor</dd>
+             <dt>Major Responsibilities</dt>
+                <dd>Teach web development skills in an immersive setting</dd>
+             <dt>Demographics</dt>
+                <dd>
+                  <ul>
+                    <li>28 years old</li>
+                    <li>Married</li>
+                    <li>No children</li>
+                    <li>B.S. Informatics</li>
+                    <li>Well traveled</li>
+                    <li>An autodidact</li>
+                    <li>A bit of a geek</li>
+                  </ul>
+                </dd>
+             <dt>Goals and tasks</dt>
+                <dd>Wants to make WDI the best possible experience for the students.</dd>
+                <dd>Always looking to improve the curriculum and to find more effective and efficient ways to teach the material.</dd>
+                <dd>Works hard to keep up to date on the latest frameworks and APIs.</dd>
+              <dt>Environment</dt>
+                <dd>Spent three years working for a large corporation after graduating from the University of Syracuse with a degree in Informatics.</dd>
+                <dd>Worked four more years as a freelancer before getting involved in the startup community.</dd>
+                <dd>Has given several seminars at various conventions. Seminars generally well attended.</dd>
+                <dd>Has all the latest gear and keeps everything up to date.</dd>
+              <dt>Quote</dt>
+                <dd>Let's just roll our own and build it from scratch!</dd>
+            </dl>
+          </figure>
+          <figure id="guest-persona">
+            <dl class="persona">
+              <dt>Persona</dt>
+                <dd>Curious Guest</dd>
+              <dt>Photo</dt>
+                <dd><!-- photo here --></dd>
+              <dt>Fictional name</dt>
+                <dd>Gertrude Guest</dd>
+              <dt>Major responsibilities</dt>
+                <dd>Curious as to what all the hoopla is about. Works in marketing.</dd>
+              <dt>Demographics</dt>
+                <dd>
+                  <ul>
+                    <li>37 years old</li>
+                    <li>Married</li>
+                    <li>Mother of two</li>
+                    <li>M.S. Marketing, M.B.A</li>
+                    <li>Likes to stay home</li>
+                    <li>Impressed by good graphic design</li>
+                    <li>Knows a bit about user experience</li>
+                  </ul>
+                </dd>
+              <dt>Goals and tasks</dt>
+                <dd>Went back to school for an MBA when her kids were old enough to go to school full day.</dd>
+                <dd>Eventually, wants to start her own company, but too addicted to her current large income and prestigious position.</dd>
+                <dd>Judges websites by how they look and feel—by the UX.</dd>
+              <dt>Environment</dt>
+                <dd>Not entirely comfortable with technology, but comfortable enough.</dd>
+                <dd>Uses a large display on her work desktop, which is a powerful Mac with graphics capabilities.</dd>
+                <dd>Has a MacBook Air she uses on trips. Good with various applications (PhotoShop, etc.), but knows nothing about coding.</dd>
+                <dd>Has an iPhone and knows how to use it. Your site better be responsive!</dd>
+              <dt>Quote</dt>
+                <dd>Check out the coold new site I discovered.</dd>
+            </dl>
+          </figure>
+        </section>
+        <section id="should-we-use-personas">
+          <h3>Should we really use personas?</h3>
+          <p>Well, that seems a funny question to ask at this juncture. I mean, we just spent a bunch of time making them up (well, I did, anyway). Now we're not going to use them?</p>
+          <p>Heh, heh. Not so fast! We might use them, and we might not. It was important to create them if for no other reason than because there is a very good chance that whatever job you take in the webdev world, you're going to encounter them. Better to know how to make them.</p>
+          <p>But there is a minority of developers who think that personas are a <em>bad idea</em>, and they make some very good points. One of the best points is that the personas are <em>made up</em>, and because we are just making them up, we tend fill them with our own <em>stereotypes</em> of our users and then fool ourselves into thinking that we know something about our users!</p>
+          <p>Gosh, who would do a thing like that? Oh. Yeah. Everyone.</p>
+          <p>Once the personas have been created, most developers will create <em>user stories</em> next. But these, too, have their detractors. Let's look at a couple of different ways to create user stories, and then see how else we might solve the same problem.</p>
+        </section>
+        <section id="what-story">
+          <h3>So, what's the <i>story</i>?</h3>
+          <p>We need some way to come up with a <em>specification</em> for our website. One of the biggest mistakes that most newbie developers (and many who really oughta know better) make is to <em>jump straight into coding</em>.</p>
+          <p>As you will soon discover — if you haven't already — the compulsion to do this is <em>almost irresistible</em>. I — cough, cough — may have even done it myself on occasion.</p>
+          <p>But jumping straight to the code is what we in the biz call a <em>Very Bad Idea<sup>TM</sup></em>. Just. Don't. Do. It.</p>
+          <p>What's the point of spending a lot of time writing code <em>if you're just going to end up throwing it all away and redoing it?</em></p>
+          <p>Here's the right way to build a website or Web application:</p>
+          <ol>
+            <li>Determine who your <mark>primary audiences</mark> are and what they want (Personas? Maybe.)</li>
+            <li>Determine what your site/application <mark>needs to do</mark> to meet their needs (User stories? Job stories? Hmm. We'll see.)</li>
+            <li><mark>Wireframe</mark> out the first few pages</li>
+            <li>Get <mark>buy in</mark> from the stakeholders</li>
+            <li>Now, and only now, <mark>write a little bit of code</mark>, then <strong>iterate</strong> through the above again.</li>
+          </ol>
+          <p>This iterative process (called the <mark>Agile Method</mark>) allows us to make sure that all the stakeholders are involved at every step of the process, and that mistakes are discovered and corrected quickly. We'll be talking a lot about Agile during WDI. Wait! Talking? <em>We'll be doing</em></p>
+          <p>Agile. Daily.</p>
+        </section>
+        <section id="user-stories">
+          <h3>Well, what do these stories look like?</h3>
+          <p>The original format from 2001 looked like this:</p>
+          <ul>
+            <li>As a <mark>[role]</mark>, I want <mark>[goal/desire]</mark> so that <mark>[benefit]</mark></li>
+          </ul>
+          <p>Here's an example (from Wikipedia):</p>
+            <blockquote>As a <em>student</em>, I want to see <em>estimated times for completion</em>, so that I may <em>schedule my lesson better</em>.</blockquote>
+          <p>Some developers have a problem with this format, however. They think that the <em>benefit</em> should come first (calling it <q>"hunting the value"</q>), so they swap it around:</p>
+            <blockquote>In order to <mark>[receive benefit]</mark> as a <mark>[role]</mark>, I want <mark>[goal/desire]</mark></blockquote>
+          <p>Now we have:</p>
+            <blockquote>So that I may <em>schedule my lessons</em> better, as a <em>student</em>, I want to see <em>estimated times for completion</em>.</blockquote>
+          <p>That worked for a number of years. Then some smart guy pointed out that if you drop the role part, you don't really lose anything. And then that lead to yet another idea, that of the job story.</p>
+          <p>The job story follows this format:</p>
+            <blockquote>When <mark>[situation]</mark>, I want to <mark>[motivation]</mark>, so I can <mark>[expected outcome]</mark></blockquote>
+          <p>Here's our user story rewritten as a job story:</p>
+            <blockquote>When I start a lesson, I want to know <em>how long it will take to complete it</em>, so that I can <em>schedule my time</em> appropriately.</blockquote>
+        </section>
+        <section id="what-format-use">
+          <h3>OK, I give up. Which format should I use?</h3>
+          <p>The truth is this: it probably doesn't matter. What is most important here is to <mark>stimulate discussion</mark> involving <mark>all the stakeholders</mark>—including, if possible, the users themselves—so that the specification—the <mark>feature set</mark>—is as complete and correct as possible.</p>
+          <p>Building the pre-work website is an <mark>Agile</mark> process—an <mark>iterative</mark> process—so why not write a few of your own user or job stories? After all, <em>you are the intended users</em>. Send yours to <a href="mailto:charles.munat@generalassemb.ly" class="email">charles.munat@generalassemb.ly</a> and maybe they'll be incorporated into the site's UX.</p>
+          <p>Stranger things have happened...</p>
+        </section>
+        <section id="wireframe">
+          <h3>On the wireframe...</h3>
+          <p>OK, assuming we have an idea of who our audience(s) is, and we have a few stories to let us know what features we want, the next step is to create a basic <mark>wireframe</mark> of the site. In this lesson we're just going to build a structure, then we'll fill it in with an example lesson in our next pre-work installment.</p>
+          <p>According to Wikipedia (a very useful resource and one I recommend highly): <q>"A <em>website wireframe</em>, also known as a page schematic or screen blueprint, is a visual guide that represents the skeletal framework of a website."</q></p>
+          <p>I used an online tool called <a href="http://balsamiq.com/">Balsamiq</a> to create a very simple structural wireframe for a typical lesson page. Here it is:</p>
+          <figure id="wireframe-image"><!-- Wireframe image goes here --></figure>
+        </section>
+        <section id="wireframe-sketchy">
+          <h3>Wait... why does it look so, uh, sketchy?</h3>
+          <p>That's not an accident! Avoid the temptation to use "pixel perfect" graphics for your wireframes!</p>
+          <p>You are not doing the graphic design here. You are working on the structure and layout of the page—determining what goes where.</p>
+          <p>If you use something like PhotoShop and you try to make it look like it will look with all the design elements in place, then you are getting way ahead of yourself and wasting a lot of time.</p>
+          <p>Odds are that this design is going to change many times before it is finalized. You really want to waste all that time? Keep it to simple sketches until we know what we're going to do.</p>
+          <p>Create an index.html page and code the above structure up (without looking), then check your code against mine (see last page). No cheating!</p>
+        </section>
           <aside role="note">
             <h4>Note</h4>
             <!-- A comment can go here -->
           </aside>
-        </section>
         <footer>
           <section id="success-measures">
             <h4>Measuring completion of this lesson</h4>
@@ -83,6 +272,12 @@
               <li><a href="http://bit.ly/1dVb1aP">A pretty good guide to wireframing</a></li>
               <li><a href="http://balsamiq.com/">Balsamiq</a></li>
             </ul>
+          </section>
+          <section id="review-code">
+            <h4>Review code</h4>
+            <code>
+              <!-- code goes here -->
+            </code>
           </section>
         </footer>
       </article>
